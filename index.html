@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="contactanos.css" />
+  </head>
+  <body>
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img src="imagenes\UPC_logo_transparente.png" alt="Logo UPC" />
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú">
+        &#9776;
+        <!-- Ícono de hamburguesa -->
+      </button>
+      <ul class="MenuHorizontal">
+        <li>
+          <a href="#historia-seccion">Historia</a>
+          <ul class="MenuVertical">
+            <li><a href="">ADN UPC</a></li>
+            <li><a href="">Quienes Somos</a></li>
+            <li><a href="">Proposito</a></li>
+            <li><a href="">Misión</a></li>
+            <li><a href="">Visión</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#proposito-seccion">Proposito</a>
+          <ul class="MenuVertical">
+            <li><a href="">Pregrado</a></li>
+            <li><a href="">EPE</a></li>
+            <li><a href="">Posgrado</a></li>
+            <li><a href="">Working Student</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#contacto-seccion">Contactanos</a>
+          <ul class="MenuVertical">
+            <li><a href="">Oficina Internacional</a></li>
+            <li><a href="">Arizona</a></li>
+            <li><a href="">NCUK Pregrado</a></li>
+            <li><a href="">NCUK MPS</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Alumnos</a>
+          <ul class="MenuVertical">
+            <li><a href="">Mi UPC</a></li>
+            <li><a href="">Intranet</a></li>
+            <li><a href="">Aula virtual</a></li>
+            <li><a href="">Mas servicios</a></li>
+          </ul>
+        </li>
+        <li><a href="">Bolsa de Trabajo</a></li>
+      </ul>
+    </nav>
+    <img class="imagengrandepo" src="imagenes\Monterrico6-scaled.jpg" />
+    <section class="historia" id="historia-seccion">
+      <h2>Historia</h2>
+      <div class="historia-contenido">
+        <div class="historia-imagen">
+          <img
+            src="imagenes/historia1.png"
+            alt="Libro abierto representando aprendizaje e historia"
+          />
+        </div>
+        <div class="historia-texto">
+          <p>
+            Bienvenidos estudiantes al curso de Interacción Humano-Computadora y
+            Tecnologías Móviles. Esta asignatura les brindará herramientas
+            esenciales para diseñar experiencias digitales que sean intuitivas y
+            accesibles.
+          </p>
+          <p>
+            Recuerden que el código limpio, la creatividad y el respeto por los
+            principios de usabilidad serán claves para que puedan presentar un
+            prototipo sólido y funcional en la semana 14. ¡Es momento de dejar
+            volar su imaginación y aplicar todo lo aprendido!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="proposito" id="proposito-seccion">
+      <h2>Proposito</h2>
+      <div class="proposito-contenido">
+        <div class="proposito-texto">
+          <p>
+            El propósito de la Universidad Peruana de Ciencias Aplicadas (UPC)
+            es formar líderes íntegros e innovadores con visión global para que
+            transformen el Perú. Este objetivo se sustenta en una educación de
+            calidad, innovación constante y responsabilidad social, preparando a
+            los estudiantes para enfrentar los desafíos del mundo actual y
+            contribuir al desarrollo sostenible de la sociedad .
+          </p>
+          <p>
+            La UPC, en alianza con Minerva, implementa un modelo educativo
+            innovador basado en el aprendizaje activo y por proyectos,
+            fomentando habilidades como el pensamiento crítico, la creatividad y
+            el trabajo en equipo. Además, sus proyectos se alinean con los
+            Objetivos de Desarrollo Sostenible de la ONU.
+          </p>
+        </div>
+        <div class="proposito-video">
+          <iframe
+            src="https://www.youtube.com/embed/SYfAT6fNv6g"
+            title="Proposito de Estudio"
+            allowfullscreen
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+    <section class="contacto" id="contacto-seccion">
+      <h2>Contáctanos para inscribirte</h2>
+      <div class="contacto-contenido">
+        <!-- FORMULARIO -->
+        <form
+          class="formulario-contacto"
+          id="formularioContacto"
+          name="Contactoparainscripción"
+        >
+          <div class="form-grupo">
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" />
+          </div>
+
+          <div class="form-grupo">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" />
+          </div>
+
+          <div class="form-grupo">
+            <label for="tipoDoc">Tipo de Documento:</label>
+            <select id="tipoDoc" name="tipoDoc">
+              <option value="dni">DNI</option>
+              <option value="pasaporte">Pasaporte</option>
+              <option value="carnet">Carnet de Extranjería</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" />
+          </div>
+
+          <div class="form-grupo">
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+              <option value="peru">Perú</option>
+              <option value="chile">Chile</option>
+              <option value="colombia">Colombia</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="email">Correo electrónico:</label>
+            <input type="text" id="email" name="email" />
+          </div>
+
+          <div class="form-grupo">
+            <label for="asunto">Asunto:</label>
+            <textarea id="asunto" name="asunto" rows="3"></textarea>
+          </div>
+
+          <div class="form-grupo">
+            <label>Preferencias de contacto:</label>
+            <div class="checkboxes">
+              <label
+                ><input type="checkbox" name="preferencia" value="correo" />
+                Correo</label
+              >
+              <label
+                ><input type="checkbox" name="preferencia" value="telefono" />
+                Teléfono</label
+              >
+            </div>
+          </div>
+
+          <div class="form-grupo">
+            <label>¿Eres estudiante?</label>
+            <div class="radios">
+              <label
+                ><input type="radio" name="estudiante" value="si" /> Sí</label
+              >
+              <label
+                ><input type="radio" name="estudiante" value="no" /> No</label
+              >
+            </div>
+          </div>
+
+          <button type="submit" class="BotonEnviar">Enviar</button>
+        </form>
+
+        <!-- TEXTO A LA DERECHA -->
+        <div class="contacto-instrucciones">
+          <p>
+            Completa el formulario con tus datos para inscribirte a la
+            universidad.
+          </p>
+          <p>
+            Recuerda usar un correo válido y seleccionar tu tipo de documento
+            correctamente. Si eres estudiante, indícalo para acceder a
+            beneficios exclusivos.
+          </p>
+          <div
+            id="mensajeEnviado"
+            class="mensaje-enviado"
+            style="display: none"
+          >
+            Mensaje enviado correctamente.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="registro-notas">
+      <!-- Formulario de ingreso -->
+      <div class="registro-formulario">
+        <h2>Registro de Notas de Alumno</h2>
+        <form id="notaForm">
+          <label for="codigo">Código:</label>
+          <input type="text" id="code" required />
+          <label for="nombres">Nombres:</label>
+          <input type="text" id="name" required />
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" id="lastname" required />
+          <label for="curso">Curso:</label>
+          <select id="course" required>
+            <option value="">Seleccione un curso</option>
+            <option value="HCI">Algoritmos</option>
+            <option value="Base de Datos">
+              Especificacion y Analisis de Requerimientos
+            </option>
+            <option value="UX Research">Calculo I</option>
+          </select>
+          <label for="nota">Nota (0 - 20):</label>
+          <input type="number" id="note" min="0" max="20" required />
+          <button type="submit">Registrar</button>
+        </form>
+      </div>
+      <!-- Lista visual de estudiantes -->
+      <div class="registro-visual">
+        <h2>Ranking de Estudiantes</h2>
+        <ul id="listaEstudiantes"></ul>
+      </div>
+    </section>
+    <section class="registro-alumno">
+      <div class="img_upc_registro">
+        <img
+          src="imagenes/UPC_logo_transparente.png"
+          alt="Logo"
+          class="img_registro"
+        />
+      </div>
+      <h2 class="registro_alumno_texto">Registro de alumno</h2>
+      <div class="formulario-registro-alumno">
+        <form name="registraralumno">
+          <div class="inputs-registro-alumno">
+            <label for="nombre_alumno">Nombre del alumno:</label>
+            <input type="text" id="alumno_name" name="alumno_name" />
+            <label for="apellidos_alumno">Apellidos:</label>
+            <input type="text" id="alumno_lastname" name="alumno_lastname" />
+            <label for="correo_alumno">Correo electronico:</label>
+            <input type="text" id="alumno_mail" name="alumno_mail" />
+            <label for="pw_alumno">Contraseña:</label>
+            <input type="password" id="alumno_pw" name="alumno_pw" />
+          </div>
+          <div class="registro-alumno-boton">
+            <button type="submit">Registrarse</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="registro-horarioclases">
+      <div class="formulario-horario-clases">
+        <h3>Registro de horario de clases</h3>
+        <form id="horarioForm">
+          <label for="FechaHorario">Fecha de la clase</label>
+          <input type="date" id="date-horario" />
+          <label for="HoraHorario">Hora de la clase</label>
+          <input type="time" id="hour-horario" />
+          <label for="CursoHorario">Curso del horario registrado</label>
+          <input type="text" id="curso-horario" />
+          <button type="submit">Registrar</button>
+        </form>
+      </div>
+      <div class="horario-visual">
+        <h2>Horario de los cursos registrados</h2>
+        <ul id="listahorario"></ul>
+      </div>
+    </section>
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img
+              src="imagenes/UPC_logo_transparente.png"
+              alt="Logo"
+              class="footer-logo"
+            />
+            <p>UPC</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="#">Política de Privacidad</a>
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="#">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+          </div>
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="imagenes/Instagram-Icon.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img src="imagenes/tik-tok.png" alt="Tiktok" class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="main.js"></script>
+    <script src="validacion_formulario.js"></script>
+    <script src="validacion_registronota.js"></script>
+    <script src="validacion_registrousuario.js"></script>
+    <script src="validacion_formulariohorario.js"></script>
+  </body>
+</html>
